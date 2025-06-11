@@ -39,9 +39,14 @@ cd PROJECT_AKHIR
 npm install
 \`\`\`
 
+### 3. Start Node.Js Server
+
+\`\`\`npm run start-server
+\`\`\`
+
 ### 3. Development Server
 
-\`\`\`bash
+\`\`\`in a different terminal: bash
 npm run dev
 \`\`\`
 
