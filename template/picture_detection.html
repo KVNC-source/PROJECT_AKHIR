@@ -54,7 +54,10 @@
 
       <div class="detection-container">
         <div class="camera-container">
-          <label for="imageUpload" class="upload-btn">Choose Image</label>
+          <!-- Added class="upload-btn" -->
+          <button id="chooseImageButton" class="upload-btn">
+            Choose Image
+          </button>
           <input
             type="file"
             id="imageUpload"
@@ -73,6 +76,16 @@
                 border-radius: 8px;
               "
             />
+            <canvas
+              id="overlayCanvas"
+              style="position: absolute; top: 0; left: 0; display: none"
+            ></canvas>
+          </div>
+          <!-- Added class="upload-btn" -->
+          <div class="save-controls">
+            <button id="saveUploadButton" class="upload-btn">
+              Save Labeled Image
+            </button>
           </div>
         </div>
 
@@ -95,6 +108,21 @@
       <p>&copy; VANKER Fish Detection Model. All rights reserved.</p>
     </footer>
 
-    <script src="../src/script.js"></script>
+    <div
+      id="messageBox"
+      class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-xl text-center">
+        <p id="messageBoxContent" class="text-lg font-semibold mb-4"></p>
+        <button
+          id="messageBoxClose"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="../src/script.js"></script>
   </body>
 </html>
