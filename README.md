@@ -44,9 +44,11 @@ npm install
 \`\`\`npm run start-server
 \`\`\`
 
-### 3. Development Server
+### in a different terminal:
 
-\`\`\`in a different terminal: bash
+### 4. Development Server
+
+\`\`\`bash
 npm run dev
 \`\`\`
 
